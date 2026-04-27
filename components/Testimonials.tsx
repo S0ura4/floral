@@ -1,35 +1,45 @@
-'use client'
+"use client";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      'The quality and elegance of my engagement ring exceeded all expectations. It&apos;s truly a masterpiece.',
-    author: 'Sarah Mitchell',
-    title: 'Bride',
+      "The quality and elegance of my engagement ring exceeded all expectations. It&apos;s truly a masterpiece.",
+    author: "Sarah Mitchell",
+    title: "Bride",
     rating: 5,
   },
   {
     id: 2,
     quote:
-      'Every detail is perfection. From the initial consultation to wearing the piece, the experience was exceptional.',
-    author: 'Michael Chen',
-    title: 'Private Collector',
+      "Every detail is perfection. From the initial consultation to wearing the piece, the experience was exceptional.",
+    author: "Michael Chen",
+    title: "Private Collector",
     rating: 5,
   },
   {
     id: 3,
     quote:
-      'The craftsmanship and care that goes into each piece is evident. Lily & Co represents true luxury.',
-    author: 'Emma Richardson',
-    title: 'Jewelry Connoisseur',
+      "The craftsmanship and care that goes into each piece is evident. Lily & Co represents true luxury.",
+    author: "Emma Richardson",
+    title: "Jewelry Connoisseur",
     rating: 5,
   },
-]
+];
 
 export default function Testimonials() {
   return (
-    <section style={{ backgroundColor: '#1a4d3e', minHeight: '100vh', width: '100%', paddingTop: '96px', paddingBottom: '96px', position: 'relative', borderTop: '1px solid rgba(201,169,97,0.2)' }}>
+    <section
+      style={{
+        backgroundColor: "#1a4d3e",
+        minHeight: "60vh",
+        width: "100%",
+        paddingTop: "96px",
+        paddingBottom: "96px",
+        position: "relative",
+        borderTop: "1px solid rgba(201,169,97,0.2)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 scroll-fade-in">
@@ -47,7 +57,10 @@ export default function Testimonials() {
             <div
               key={testimonial.id}
               className="bg-card p-8 rounded-sm scroll-fade-in"
-              style={{ border: '1px solid rgba(201,169,97,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}
+              style={{
+                border: "1px solid rgba(201,169,97,0.2)",
+                boxShadow: "0 4px 24px rgba(0,0,0,0.3)",
+              }}
             >
               {/* Stars */}
               <div className="flex gap-1 mb-6">
@@ -87,5 +100,5 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }

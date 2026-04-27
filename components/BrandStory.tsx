@@ -1,8 +1,19 @@
-'use client'
+"use client";
 
 export default function BrandStory() {
   return (
-    <section id="about" style={{ backgroundColor: '#0a2d23', minHeight: '100vh', width: '100%', paddingTop: '96px', paddingBottom: '96px', position: 'relative', borderTop: '1px solid rgba(201,169,97,0.2)' }}>
+    <section
+      id="about"
+      style={{
+        backgroundColor: "#0a2d23",
+        minHeight: "60vh",
+        width: "100%",
+        paddingTop: "96px",
+        paddingBottom: "96px",
+        position: "relative",
+        borderTop: "1px solid rgba(201,169,97,0.2)",
+      }}
+    >
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 scroll-fade-in">
@@ -17,25 +28,27 @@ export default function BrandStory() {
         {/* Story Content */}
         <div className="space-y-8 scroll-fade-in">
           <p className="text-lg font-light text-foreground/75 leading-relaxed">
-            Lily & Co Nepal is dedicated to timeless elegance, blending modern craftsmanship
-            with the brilliance of fine diamonds. Founded with a vision to celebrate life&apos;s
-            most precious moments, our brand represents more than jewelry—it represents
-            the artistry, passion, and precision that goes into every creation.
+            Lily & Co Nepal is dedicated to timeless elegance, blending modern
+            craftsmanship with the brilliance of fine diamonds. Founded with a
+            vision to celebrate life&apos;s most precious moments, our brand
+            represents more than jewelry—it represents the artistry, passion,
+            and precision that goes into every creation.
           </p>
 
           <p className="text-lg font-light text-foreground/75 leading-relaxed">
-            Each piece in our collection is a testament to our commitment to excellence.
-            We work exclusively with ethically sourced diamonds and premium materials,
-            ensuring that your jewelry is not only beautiful but also responsible. Our
-            master craftsmen bring decades of expertise to every detail, from initial design
-            to the final polish.
+            Each piece in our collection is a testament to our commitment to
+            excellence. We work exclusively with ethically sourced diamonds and
+            premium materials, ensuring that your jewelry is not only beautiful
+            but also responsible. Our master craftsmen bring decades of
+            expertise to every detail, from initial design to the final polish.
           </p>
 
           <p className="text-lg font-light text-foreground/75 leading-relaxed">
-            We believe that true luxury is timeless. Our designs transcend fleeting trends,
-            offering pieces that will be cherished for generations. Whether it&apos;s a
-            milestone moment or an everyday luxury, Lily & Co creates jewelry that becomes
-            part of your personal story.
+            We believe that true luxury is timeless. Our designs transcend
+            fleeting trends, offering pieces that will be cherished for
+            generations. Whether it&apos;s a milestone moment or an everyday
+            luxury, Lily & Co creates jewelry that becomes part of your personal
+            story.
           </p>
         </div>
 
@@ -45,7 +58,9 @@ export default function BrandStory() {
             <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-primary font-light text-xl">◆</span>
             </div>
-            <h3 className="text-foreground font-serif font-light mb-2">Quality First</h3>
+            <h3 className="text-foreground font-serif font-light mb-2">
+              Quality First
+            </h3>
             <p className="text-foreground/70 font-light text-sm">
               Premium materials and meticulous attention to every detail
             </p>
@@ -55,7 +70,9 @@ export default function BrandStory() {
             <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-primary font-light text-xl">✦</span>
             </div>
-            <h3 className="text-foreground font-serif font-light mb-2">Ethical Source</h3>
+            <h3 className="text-foreground font-serif font-light mb-2">
+              Ethical Source
+            </h3>
             <p className="text-foreground/70 font-light text-sm">
               Responsibly sourced diamonds and sustainable practices
             </p>
@@ -65,7 +82,9 @@ export default function BrandStory() {
             <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-primary font-light text-xl">✧</span>
             </div>
-            <h3 className="text-foreground font-serif font-light mb-2">Timeless Design</h3>
+            <h3 className="text-foreground font-serif font-light mb-2">
+              Timeless Design
+            </h3>
             <p className="text-foreground/70 font-light text-sm">
               Pieces that transcend trends and become heirlooms
             </p>
@@ -73,5 +92,5 @@ export default function BrandStory() {
         </div>
       </div>
     </section>
-  )
+  );
 }

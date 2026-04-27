@@ -1,40 +1,51 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
+import { useState } from "react";
+import Image from "next/image";
 
 const products = [
   {
     id: 1,
-    name: 'Ethereal Diamond Ring',
-    category: 'Rings',
-    price: '$4,850',
-    image: '/ethereal-ring.jpg',
-    description: 'Brilliant cut diamond with 18k gold setting',
+    name: "Ethereal Diamond Ring",
+    category: "Rings",
+    price: "$4,850",
+    image: "/ethereal-ring.jpg",
+    description: "Brilliant cut diamond with 18k gold setting",
   },
   {
     id: 2,
-    name: 'Noir Velvet Necklace',
-    category: 'Necklaces',
-    price: '$3,200',
-    image: '/noir-necklace.jpg',
-    description: 'Diamond pendant with delicate gold chain',
+    name: "Noir Velvet Necklace",
+    category: "Necklaces",
+    price: "$3,200",
+    image: "/noir-necklace.jpg",
+    description: "Diamond pendant with delicate gold chain",
   },
   {
     id: 3,
-    name: 'Diamond Studs',
-    category: 'Earrings',
-    price: '$2,400',
-    image: '/diamond-studs.jpg',
-    description: 'Perfect pair of brilliant diamond earrings',
+    name: "Diamond Studs",
+    category: "Earrings",
+    price: "$2,400",
+    image: "/diamond-studs.jpg",
+    description: "Perfect pair of brilliant diamond earrings",
   },
-]
+];
 
 export default function FeaturedCollection() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null)
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <section id="collection" style={{ backgroundColor: '#0d3a2e', minHeight: '100vh', width: '100%', paddingTop: '96px', paddingBottom: '96px', position: 'relative', borderTop: '1px solid rgba(201,169,97,0.2)' }}>
+    <section
+      id="collection"
+      style={{
+        backgroundColor: "#0d3a2e",
+        minHeight: "60vh",
+        width: "100%",
+        paddingTop: "96px",
+        paddingBottom: "96px",
+        position: "relative",
+        borderTop: "1px solid rgba(201,169,97,0.2)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16 text-center scroll-fade-in">
@@ -45,7 +56,8 @@ export default function FeaturedCollection() {
             Featured Collection
           </h2>
           <p className="text-foreground/70 font-light max-w-2xl mx-auto">
-            Each piece is handpicked for its brilliance, quality, and timeless appeal.
+            Each piece is handpicked for its brilliance, quality, and timeless
+            appeal.
           </p>
         </div>
 
@@ -65,7 +77,7 @@ export default function FeaturedCollection() {
                   alt={product.name}
                   fill
                   className={`object-cover transition-transform duration-500 ${
-                    hoveredId === product.id ? 'scale-105' : 'scale-100'
+                    hoveredId === product.id ? "scale-105" : "scale-100"
                   }`}
                 />
               </div>
@@ -106,5 +118,5 @@ export default function FeaturedCollection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
